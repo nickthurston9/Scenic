@@ -1,0 +1,184 @@
+/* animations */
+@keyframes titleSlide {
+  from{
+    opacity: 0;
+    bottom: -40px;
+    }
+    to{
+      opacity: 1;
+      bottom: 0;
+    }
+}
+
+body{
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  background: #ddddde;
+  height: 100%;
+  background-image: url('pics/citySkyLine.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header{
+  display: flex;
+  flex-direction: column;
+}
+.navig{
+  width: 100%;
+  position: fixed;
+  background: rgba(0,0,0,.5)
+}
+.navig ul{
+  list-style: none;
+}
+.navig ul li.list-item{
+  display: inline;
+  margin-left: 20px;
+}
+.navig ul li.list-item a{
+  text-decoration: none;
+  color: #feefee;
+  line-height: 1vh;
+}
+.navig ul li.list-item a:hover{
+  text-decoration: underline;
+}
+.navig a.icon{
+  display: none;
+}
+header h1, header p{
+  animation: titleSlide 2s ease-in-out;
+  position: relative;
+  margin-top: 20vh;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .5rem;
+  color: #feefee;
+  text-shadow: 0px 0px 5px black;
+  font-weight: 300;
+}
+header h1{
+  font-size: 8vh;
+}
+header p{
+  margin-top: -20px;
+}
+.intro{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 9vh;
+}
+.blurb{
+  width: 300px;
+  margin: 25px auto;
+  text-align: center;
+  background: rgba(0,0,0,.9);
+  color: #feefee;
+  font-weight: 300;
+  border-radius: 5px;
+}
+.blurb p{
+  padding: 2vh;
+}
+.offers{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 9vh;
+}
+.offer-package{
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0px 0px 20px black;
+  border-radius: 5px;
+  margin: 25px auto;
+}
+.offer-package h2{
+  color: #28a745;
+}
+.offer-package p{
+  padding: 2vh;
+}
+.offer-package a{
+  margin: 0 auto;
+  text-decoration: none;
+  background: #007bff;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.contact{
+  margin-top: 22rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: rgba(0,0,0,.9);
+}
+.contact h2{
+  margin: 2vh;
+  color: #feefee;
+  text-shadow: 0px 0px 5px black;
+  font-weight: 300;
+}
+.contact form label{
+  margin: 2vh;
+  color: #feefee;
+  text-shadow: 0px 0px 5px black;
+  font-weight: 300;
+}
+.contact form input{
+  height: 1.5rem;
+  display: block;
+  margin: 2vh;
+  border-radius: 2px;
+  border: none;
+}
+.contact form textarea{
+  display: block;
+  margin: 2vh;
+  border-radius: 2px;
+}
+.contact form button{
+  margin: 2vh;
+  font-size: 18px;
+  border: none;
+  border-radius: 2px;
+  font-family: 'Open Sans';
+  height: 2rem;
+  width: auto;
+  background: #007bff;
+  color: #fff;
+}
+.contact form button:hover{
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .navig a{display: none;}
+  .navig a.icon{
+    display: block;
+  }
+  .navig.responsive{position: relative;}
+  .navig.responsive a.icon{
+    position: absolute;
+  }
+  .navig.responsive a{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .intro{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .blurb{
+    width: auto;
+  }
+  .offers{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+}

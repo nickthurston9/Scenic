@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Scenic - Vacation Planning Services</title>
+</head>
+<body>
+  <header>
+    <nav id="myNavig" class="navig">
+      <ul>
+        <li class="list-item"><a href="#">Booking</a></li>
+        <li class="list-item"><a href="#">Contact</a></li>
+        <li class="list-item"><a href="#">About Us</a></li>
+        <li class="list-item"><a href="#">Customer Support</a></li>
+        <li class="list-item"><a href="javascript:void(0);" class="icon" onclick="dropDown()"><i class="fa fa-bars"></i></a></li>
+      </ul>
+    </nav>
+    <h1>Scenic</h1>
+    <p>Vacation Planning Services</p>
+  </header>
+  <section class="intro">
+    <div class="blurb box">
+      <h2>Are you planning a vacation?</h2>
+      <p>Whether you're planning a vacation or getting ready to leave town, we've got the tools you need to make it your best get-away ever!</p>
+    </div>
+    <div class="blurb box">
+      <h2>Not sure where to go?</h2>
+      <p>Don't worry. We have a lot of experience finding just the right place for you and your family.</p>
+    </div>
+    <div class="blurb box">
+      <h2>Dealing with changing travel prices?</h2>
+      <p>We don't change our prices while you're comparing them like other travel sites do. We want you to feel as comfortable with your budget as you will on vacation.</p>
+    </div>
+  </section>
+  <section class="offers">
+    <div class="offer-package flights box">
+      <h2>Flights <i class="fa fa-plane" aria-hidden="true"></i></h2>
+      <p>This package includes our best work to find you the right flight to your get-away spot.</p>
+      <a href="#">Plans starting at $99.99</a>
+    </div>
+    <div class="offer-package vacations box">
+      <h2>Vacations <i class="fa fa-globe" aria-hidden="true"></i></h2>
+      <p>This package includes our best work to find you the best vacation ever.</p>
+      <a href="#">Plans starting at $149.99</a>
+    </div>
+    <div class="offer-package full box">
+      <h2>Full Package <i class="fa fa-check" aria-hidden="true"></i></h2>
+      <p>This package includes our best work to find you the right flight to your get-away spot and the best vacation ever. This package also includes other offers for future vacations.</p>
+      <a href="#">Plans starting at $199.99</a>
+    </div>
+  </section>
+  <section class="contact box">
+    <h2>Contact Us</h2>
+    <form class="" action="index.html" method="post">
+      <label for="First Name">First Name</label>
+      <input type="text">
+      <label for="Last Name">Last Name</label>
+      <input type="text">
+      <label for="Email">Email</label>
+      <input type="email">
+      <label for="Message">Message</label>
+      <textarea name="name" rows="8" cols="37"></textarea>
+      <button type="submit" name="submit">Submit</button>
+    </form>
+  </section>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script type="text/javascript">
+    ScrollReveal().reveal('.box');
+  </script>
+</body>
+</html>
